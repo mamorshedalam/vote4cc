@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sl-container {
+    @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
+  }
+
+  .sl-container-wrap {
+    @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
+  }
+
+  /* ANIMATION */
+  .sl-animated {
+    @apply transition duration-500;
+  }
+
+  .sl-animated-fade {
+    @apply transition-all duration-500 ease-in-out;
+  }
+}
+
+@layer base {
+  section {
+    @apply relative w-full;
+  }
+
+  a {
+    @apply inline-block cursor-pointer;
+  }
+
+  button {
+    @apply inline-block cursor-pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply outline-none bg-transparent;
+  }
+
+  img {
+    @apply object-cover;
+  }
+}
+
+@layer utilities {
+}
