@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply text-[#ffeed0] md:text-2xl text-lg;
+    @apply text-white md:text-2xl text-lg;
   }
 
   section {
