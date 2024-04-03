@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- TITLE & FAVICON -->
-     <link rel="icon" href="assets/images/logo/favicon.png" />
+     <link rel="icon" href="assets/img/favicon.png" />
      <title>Vote for CC</title>
 
      <!-- GOOGLE FONT -->
@@ -18,7 +18,174 @@
 </head>
 
 <body>
+     <!-- SIDEBAR -->
+     <aside id="sidebar" class="fixed inset-0 w-screen h-screen bg-[#4d6a87]/50 z-[999] opacity-0 invisible sl-animation-fade">
+          <button onclick="sidebarToggle(false)" class="absolute top-3 left-2 w-7 h-7 leading-8 bg-white rounded-full"><svg class="w-3 mx-auto fill-[#304254] hover:fill-[#4d6a87]"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+               </svg></button>
+          <ul id="sidenav" class="absolute top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white font-semibold text-base text-[#304254] text-ellipsis text-nowrap p-5 translate-x-[400px] sl-animation">
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">Home</a></li>
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">About CC</a></li>
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">CC’s message</a></li>
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">Vision</a></li>
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">Achieve </a></li>
+               <li><a href="" class="block w-full py-2.5 hover:text-[#4d6a87]">Contact Us</a></li>
+     </aside>
+     <!-- SIDEBAR -->
 
+
+     <!-- HEADER -->
+     <nav class="fixed top-0 flex justify-end w-full bg-white border-b border-black/5 z-50">
+          <ul class="lg:flex hidden font-semibold text-base text-[#304254] text-ellipsis text-nowrap">
+               <li><a href="#home" class="py-3 px-5 hover:text-[#4d6a87]">Home</a></li>
+               <li><a href="#about" class="py-3 px-5 hover:text-[#4d6a87]">About CC</a></li>
+               <li><a href="#message" class="py-3 px-5 hover:text-[#4d6a87]">CC’s message</a></li>
+               <li><a href="#vision" class="py-3 px-5 hover:text-[#4d6a87]">Vision</a></li>
+               <li><a href="#achieve" class="py-3 px-5 hover:text-[#4d6a87]">Achieve </a></li>
+               <li><a href="#contact" class="py-3 px-5 hover:text-[#4d6a87]">Contact Us</a></li>
+          </ul>
+          <button onclick="sidebarToggle(true)" class="lg:hidden">
+               <svg class="w-8 fill-[#304254] p-2 hover:fill-[#4d6a87]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                         d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+               </svg>
+          </button>
+     </nav>
+     <!-- HEADER -->
+
+
+     <!-- HERO -->
+     <section id="home" class="bg-cover bg-center bg-no-repeat md:py-40 sm:py-28 py-20" style="background-image: url(assets/img/banner.jpg);">
+          <div class="sl-container">
+               <h1 class="xl:text-5xl md:text-3xl text-xl font-semibold md:mb-12 mb-9">
+                    <span class="md:block md:pb-6 pb-2">Welcome to</span>
+                    <span class="md:block md:pb-6 pb-2">The official campaign page for</span>
+                    <span class="block md:pb-6 py-2 xl:text-6xl md:text-4xl font-bold">Christina Calugcugan “CC”,</span>
+                    <span class="md:block md:pb-6 pb-2">Candidate for SEIU Local 1000 President.</span>
+               </h1>
+               <a href="" class="flex gap-1">
+                    <span class="bg-[#da1bb1] md:py-4 py-2 md:px-12 px-9 font-bold md:text-xl text-lg rounded-s-full">About CC</span>
+                    <span class="bg-[#da1bb1] md:py-4 py-2 md:px-6 px-4 rounded-e-full">
+                         <svg class="w-5 fill-[#ffeed0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                    </span>
+               </a>
+          </div>
+     </section>
+     <!-- HERO -->
+
+     <!-- ABOUT -->
+     <section id="about" class="bg-[#da1bb1] md:py-20 py-10">
+          <div class="sl-container lg:space-y-9 sm:space-y-6 space-y-4">
+               <h2 class="md:text-5xl text-2xl font-bold">Hi, It’s Christina Calugcugan</h2>
+               <p>“CC” has been a CA State Worker with the Employment Development Department for over 15 years and is currently serving as the Vice President of DLC 724, a delegate of the Los Angeles
+                    Labor Fed and is also a Regional Vice President for the Asian Pacific Islander Caucus with the SEIU International Union and brings years of experience and dedication to the labor
+                    movement.</p>
+               <p>With a passion for advocating for workers' rights and improving the lives of SEIU members, CC has organized and helped unionize health care workers in San Diego, the
+                    State Bar workers at Local 1000 and also helped Virginia Government workers unionize.</p>
+               <p>CC is strong woman of faith and is an active volunteer at her church and in her community and
+                    is committed to leading Local 1000 with integrity, transparency, and inclusivity. </p>
+          </div>
+     </section>
+     <!-- ABOUT -->
+
+     <!-- MESSAGE -->
+     <section id="message" class="bg-[#ffeed0] text-[#da1bb1] md:py-20 py-10">
+          <div class="sl-container">
+               <h2 class="md:text-5xl text-2xl font-bold lg:mb-9 sm:mb-6 mb-4">CC’s Message</h2>
+               <p class="lg:ml-32 sm:ml-20">“It is time for State workers to come together and demand the respect and pay that we deserve! We are public servants and serve ALL
+                    Californians but we are getting paid lower than
+                    the people we provide services too and work under conditions that put our health and safety at risk. We must stand up for what is RIGHT and FIGHT for a living wage where our state
+                    workers are not needing to work two full-time jobs to make ends meet and where we are not living in our cars because we cannot afford rent. We must come together and strengthen our
+                    union that will secure our pensions, our benefits and a living wage where we can thrive and as your Local 1000 President, I will make sure this work gets done!”</p>
+          </div>
+     </section>
+     <!-- MESSAGE -->
+
+     <!-- VISION -->
+     <section id="vision" class="bg-[#da1bb1] md:py-20 py-10">
+          <div class="sl-container text-center">
+               <h2 class="md:text-5xl text-2xl font-bold lg:mb-9 sm:mb-6 mb-4">Vision for SEIU</h2>
+               <p>My Vision for SEIU Local 1000 is to strengthen our membership and identify and develop quality leaders that will help sustain our local for
+                    the years to come. To implement structures and programs that will develop our member leaders and educate all our members on our contract. Where we have the training and education
+                    needed
+                    to enforce and exercise our rights, where we as CA State Workers have livable wages and the power where the State takes care of the workers that care and provide services to all
+                    Californians.</p>
+          </div>
+     </section>
+     <!-- VISION -->
+
+     <!-- ACHIEVE -->
+     <section id="achieve" class="bg-[#ffeed0] text-[#da1bb1] md:py-20 py-10">
+          <div class="sl-container">
+               <h2 class="md:text-5xl text-2xl font-bold lg:mb-9 sm:mb-6 mb-4">We will achieve this by</h2>
+               <ul class="md:space-y-4 space-y-2">
+                    <li class="flex items-center">
+                         <svg class="w-4 fill-[#da1bb1] mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                         Strengthening union solidarity and member engagement
+                    </li>
+                    <li class="flex items-center">
+                         <svg class="w-4 fill-[#da1bb1] mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                         Fighting for livable wages, benefits, and working conditions for all SEIU members
+                    </li>
+                    <li class="flex items-center">
+                         <svg class="w-4 fill-[#da1bb1] mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                         Advance diversity, equity, and inclusion within the union and in the workplace
+                    </li>
+                    <li class="flex items-center">
+                         <svg class="w-4 fill-[#da1bb1] mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                         Champion legislative and policy initiatives that support workers' rights
+                    </li>
+                    <li class="flex items-center">
+                         <svg class="w-4 fill-[#da1bb1] mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path
+                                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                         </svg>
+                         Promote union growth and empower SEIU locals to thrive
+                    </li>
+               </ul>
+               <p class="text-center bg-[#da1bb1] text-[#ffeed0] sm:py-6 sm:px-12 px-6 py-4 max-w-3xl mx-auto lg:mt-20 sm:mt-14 mt-9">Join the movement to elect Christina Calugcugan as SEIU President
+               </p>
+          </div>
+     </section>
+     <!-- ACHIEVE -->
+
+     <!-- CONTACT -->
+     <section id="contact" class="bg-[#da1bb1] md:pt-10 pt-5">
+          <div class="sl-container">
+               <div class="flex flex-wrap">
+                    <div class="lg:w-2/5 md:w-1/2 w-full">
+                         <img src="assets/img/contact.jpg" alt="" class="h-full w-full object-cover">
+                    </div>
+                    <div class="lg:w-3/5 md:w-1/2 w-full lg:pl-10 md:pl-5 md:py-20 py-10">
+                         <h2 class="md:text-5xl text-2xl font-bold lg:mb-9 sm:mb-6 mb-4">Contact Us</h2>
+                         <p class="lg:mb-9 sm:mb-6 mb-4">Join Christina Calugcugan in the fight for a stronger, more inclusive SEIU that works for all its members. Together, we can make a difference! </p>
+                         <p class="lg:mb-9 sm:mb-6 mb-4">Have questions or want to get involved?</p>
+                         <p>Contact us at <a href="mailto:info@vote4cc.com">info@vote4cc.com</a></p>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- CONTACT -->
+
+     <!-- SCRIPT -->
+     <script src="assets/js/script.js"></script>
 </body>
 
 </html>

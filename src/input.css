@@ -3,35 +3,36 @@
 @tailwind utilities;
 
 @layer components {
+  .sl-container-fluid {
+    @apply max-w-[1380px] w-full px-3 mx-auto;
+  }
   .sl-container {
-    @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
+    @apply 2xl:max-w-[1200px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full px-3 mx-auto;
   }
-
-  .sl-container-wrap {
-    @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
+  .sl-animation {
+    @apply transition-all duration-300 ease-out;
   }
-
-  /* ANIMATION */
-  .sl-animated {
-    @apply transition duration-500;
-  }
-
-  .sl-animated-fade {
-    @apply transition-all duration-500 ease-in-out;
+  .sl-animation-fade {
+    @apply transition-opacity duration-150 ease-linear;
   }
 }
 
 @layer base {
+  body {
+    @apply text-[#ffeed0] md:text-2xl text-lg;
+  }
+
   section {
-    @apply relative w-full;
+    @apply relative;
   }
 
-  a {
-    @apply inline-block cursor-pointer;
-  }
-
+  a,
   button {
     @apply inline-block cursor-pointer;
+  }
+
+  img {
+    @apply w-full;
   }
 
   input,
@@ -40,10 +41,37 @@
     @apply outline-none bg-transparent;
   }
 
-  img {
-    @apply object-cover;
+  a,
+  button,
+  span,
+  p,
+  i,
+  input,
+  select,
+  textarea,
+  li,
+  ul,
+  img,
+  svg,
+  label,
+  svg path,
+  tr,
+  td,
+  *::after,
+  *::before,
+  .transition-3,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply transition-all duration-300 ease-out;
   }
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
 }
