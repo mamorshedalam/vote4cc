@@ -14,3 +14,4 @@ function sidebarToggle(active) {
           sidenav.classList.add("translate-x-[400px]");
      }
 }
+
