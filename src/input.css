@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply text-white bg-violet-950 md:text-2xl text-lg;
+    @apply text-white bg-violet-950 md:text-2xl xs:text-lg text-sm;
   }
 
   section {
